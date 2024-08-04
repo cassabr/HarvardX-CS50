@@ -7,7 +7,6 @@
 
 int main(void)
 {
-    // asks for change owed and validates input, only accepts positive numbers
     float dollars;
     do
     {
@@ -17,7 +16,7 @@ int main(void)
 
     int coins = 0;
     // converts from float to int for precision
-    int cents = round(dollars * 100);
+    int cents = round(dollars * 1);
 
     // loop continues until you are owed no change
     while (cents > 0)
@@ -46,5 +45,5 @@ int main(void)
         }
     }
     // displays the total number of coins needed to give the change
-    printf("you are owed %i coins\n", coins);
+    printf("%i\n", coins);
 }
